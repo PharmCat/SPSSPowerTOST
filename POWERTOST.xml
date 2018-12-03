@@ -1,0 +1,30 @@
+<Command xmlns="http://xml.spss.com/spss/extension" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="extension-1.0.xsd" Name="POWERTOST" Language="R">
+	<Subcommand Name="" IsArbitrary="False" Occurrence="Optional">
+		<Parameter Name="CMD" ParameterType="Keyword"/>
+			<EnumValue Name="POWERTOST"/>
+			<EnumValue Name="SAMPLENTOST"/>
+			<EnumValue Name="CVFROMCI"/>
+		<Parameter Name="ALPHA" ParameterType="Number"/>
+		<Parameter Name="DESIGN" ParameterType="QuotedString">
+			<EnumValue Name="PARALLEL"/>
+			<EnumValue Name="2X2"/>
+			<EnumValue Name="2X2X4"/>
+	</Parameter>		
+	</Subcommand>
+	<Subcommand Name="GMR" Occurrence="Optional">
+		<Parameter Name="THETA0" ParameterType="Number"/>
+	</Subcommand>
+		<Subcommand Name="BEL" Occurrence="Optional">
+			<Parameter Name="THETA1" ParameterType="Number"/>
+			<Parameter Name="THETA2" ParameterType="Number"/>
+	</Subcommand>
+<Subcommand Name="CV" Occurrence="Optional">
+	<Parameter Name="VAL" ParameterType="Number"/>
+</Subcommand>
+<Subcommand Name="POWER" Occurrence="Optional">
+	<Parameter Name="VAL" ParameterType="Number"/>
+</Subcommand>
+<Subcommand Name="N" Occurrence="Optional">
+	<Parameter Name="VAL" ParameterType="Integer"/>
+</Subcommand>
+</Command>
