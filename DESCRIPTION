@@ -1,5 +1,1 @@
-Package: spsspowertost
-Type: SPSS
-Version: 0.1
-Imports: mvtnorm, stats, utils, graphics, grDevices, cubature (>= 1.3-6), TeachingDemos, PowerTOST
-License: Apache-2.0
+
